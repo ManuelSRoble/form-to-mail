@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de formulario por Mail</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="ManuDeveloper">
+    <meta name="description" content="Enviar formulario por mail.">
+</head>
+<body>
+    <section id="wrapper">
+        <h2>Send Your Form</h2>
+        <form action="https://formsubmit.co/c091a8492457e3eb998e528abf362090" method="POST">
+           <label for="nombre">Nombre</label> 
+           <input type="text" name="name">
+
+           <label for="email">Correo Electronico</label> 
+           <input type="email" name="email">
+
+           <label for="subject">Asunto</label> 
+           <input type="text" name="subject">
+
+           <label for="comments">Comentarios</label>
+           <textarea name="comments" cols="15" rows="5"></textarea>
+
+           <input type="submit" value="Enviar" class="btn">
+            <!-- para que no salga de la pagina -->
+           <input type="hidden" name="_next" value="http://127.0.0.1:5500/pagWeb/formToMail/index.html">
+           <!-- para que no haga el recaptcha -->
+           <input type="hidden" name="_captcha" value="false">
+           
+        </form>
+    </section>
+</body>
+</html>
